@@ -1,28 +1,46 @@
-@import "~sanitize.css"
-@import "vars.styl"
-@import "header.styl"
+@import '~sanitize.css';
+@import 'vars.styl';
+@import 'header.styl';
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background-color: black;
+  margin: 0;
 }
 
-h1 {
-  color: white; 
+.intro {
+  background-color: #C8C8C8;
+  width: 100vw;
+  height: 100vh;
+  display:flex;
 }
 
-.hello {
-  background-color: yellow;
-
-  .title {
-    color: greenyellow;
+nav {
+  color: black;
+  font-family: Helvetica;
+  font-size: 25px;
   }
+
+.name {
+    position: absolute;
+    margin:8px;
+    line-height: 5px;
+    top: 5%;
+    left: 3%;
 }
-
-.box {
-  background-color: blue;
-
-  h3 {
-    font-size: 20px;
-    color: white;
+.menu {   
+    top: 4%;
+    right: 3%;
+    position: absolute;
+}
+.hamburguer {
+   background-color: black;
+    flex-direction: column;
+    height: 5px;
+    width: 40px;
+    align-items: center;
+    margin: 7px;
   }
-  }
+
