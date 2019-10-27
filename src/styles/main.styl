@@ -14,33 +14,69 @@ body {
   background-color: #C8C8C8;
   width: 100vw;
   height: 100vh;
-  display:flex;
+  display: flex;
 }
 
 nav {
   color: black;
   font-family: Helvetica;
   font-size: 25px;
-  }
+}
 
 .name {
-    position: absolute;
-    margin:8px;
-    line-height: 5px;
-    top: 5%;
-    left: 3%;
+  position: absolute;
+  margin: 8px;
+  line-height: 5px;
+  top: 5%;
+  left: 3%;
 }
-.menu {   
-    top: 4%;
-    right: 3%;
-    position: absolute;
-}
-.hamburguer {
-   background-color: black;
-    flex-direction: column;
-    height: 5px;
-    width: 40px;
-    align-items: center;
-    margin: 7px;
-  }
 
+.menu {
+  top: 4%;
+  right: 3%;
+  position: absolute;
+  color: black;
+  cursor: pointer;
+}
+
+.hamburguer {
+  background-color: black;
+  flex-direction: column;
+  height: 5px;
+  width: 40px;
+  align-items: center;
+  margin: 7px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 10%;
+  color: black;
+  font-size: 22px;
+  background-color: #F0B608;
+  height: 120px;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+
+}
+
+a{
+  color:inherit;
+}
+
+.menu:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+  color: #F0B608
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 52 px;
+  }
